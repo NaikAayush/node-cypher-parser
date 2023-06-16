@@ -1,5 +1,5 @@
 {
-  "name": "cypher-parser",
+  "name": "node-cypher-parser",
   "version": "0.1.13",
   "description": "A Node addon on top of libcypher-parser, used to parse and lint cypher queries.",
   "os": [
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Loupi/node-cypher-parser.git"
+    "url": "git+https://github.com/NaikAayush/node-cypher-parser.git"
   },
   "keywords": [
     "node",
@@ -44,9 +44,9 @@
   "author": "Louis-Pierre Beaumont",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Loupi/node-cypher-parser/issues"
+    "url": "https://github.com/NaikAayush/node-cypher-parser/issues"
   },
-  "homepage": "https://github.com/Loupi/node-cypher-parser#readme",
+  "homepage": "https://github.com/NaikAayush/node-cypher-parser#readme",
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.1",
     "nan": "^2.14.2"
@@ -76,7 +76,8 @@
   "binary": {
     "module_name": "cypher",
     "module_path": "./dist/release/",
-    "host": "https://cypher-parser.s3.amazonaws.com/"
+    "host": "https://github.com/NaikAayush/node-cypher-parser/releases/download/",
+    "remote_path": "{version}"
   },
   "nyc": {
     "include": [
