@@ -2,6 +2,14 @@ name: Node.js CI
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "*"
+    tags:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
 
 jobs:
   build:
@@ -15,7 +23,7 @@ jobs:
             brew-install: ""
           - os: macos-latest
             gcc-version: "7"
-            brew-install: "brew install gcc"
+            brew-install: "brew install gcc &&"
 
     runs-on: ${{ matrix.os }}
 
